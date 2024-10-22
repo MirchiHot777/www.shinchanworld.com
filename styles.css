@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Gochi+Hand&family=Permanent+Marker&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+.home{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-bar{
+  padding: 5px;
+  background-color: gold;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  
+}
+.nav-bar h1{
+  font-family: "Potta One", system-ui;
+  color: gray;
+}
+.login{
+  font-size: 20px;
+  font-weight: 600;
+ 
+}
+.login a{
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: grey;
+  font-family: "Akaya Kanadaka", system-ui;
+  
+}
+
+.login a:hover{
+  background-color: orangered;
+}
+#menu-icon{
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000001;
+  display: none;
+}
+.nav-buttom{
+  background-color: olivedrab;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  font-family: "Akaya Kanadaka", system-ui;
+}
+.nav-buttom  li{
+ display: inline;
+ 
+}
+.nav-buttom li a{
+  position: relative;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+ 
+}
+
+.nav-buttom a:hover{
+  color: gold;
+ }
+ .nav-buttom a::before{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  background-color: gold;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+ }
+ .nav-buttom a:hover::before{
+  width: 100%;
+ }
+ .heading{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 2px solid orangered;
+  width:100%;
+  text-align: center;
+  font-family: "Akaya Kanadaka", system-ui;
+  letter-spacing: 2px;
+}
+/* Hero Section */
+.hero-section {
+  height: 600px;
+  background-image: url("bg-pics/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+ .charector{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    padding: 50px 0;
+ }
+ .shin-pics{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1280px;
+  width: 100%;
+ }
+ .char{
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  white-space: nowrap;
+  font-family: "Gochi Hand", cursive;
+  letter-spacing: 2px;
+ }
+ .char img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.shin-pics .char img:hover{
+  transform: translateY(-10px);
+    transition: 0.2s all linear;
+}
+
+footer{
+  background-color: lightgray;
+  margin-top: 20px;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+ 
+}
+.foot .footimg:hover{
+  transform: translateY(10px);
+    transition: 0.2s all linear;
+}
+.footpics {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 80px;
+  cursor: pointer;
+}
+
+.footpics .fp:hover
+{
+  transform: translateY(10px);
+    transition: 0.2s all linear;
+    
+}
+footer p{
+  text-align: center;
+  color: red;
+  padding: 20px;
+  font-family: "VT323", monospace;
+  font-weight: 200;
+  font-size: 20px;
+ 
+}
+.lo{
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.lo a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Akaya Kanadaka", system-ui;
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 5px;
+  background-color: grey;
+
+}
+.lo a:hover{
+  background-color: orangered;
+}
+.wrapper{
+  display: flex;
+  max-width: 1450px;
+  position: relative;
+ 
+}
+.wrapper i{
+  top: 50%;
+  height: 40px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: orangered;
+}
+.wrapper i:first-child{
+  left: 22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: 22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 20px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+
+
+@media (max-width: 400px){
+ .nav-bar{
+  font-size: 1rem;
+ }
+ .nav-logo img{
+  width: 30px;
+  height: 30px;
+ }
+ .nav-bar h1{
+  font-size: 0.7rem;
+ }
+ .login a{
+  font-size: 0.8rem;
+ }
+.nav-buttom li a{
+  font-size: 0.4rem;
+}
+.hero-section{
+  height: 400px;
+}
+
+ .shin-pics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  max-width: 1280px;
+  width: 100%;
+}
+.char{
+  margin: 20px 10px;
+  height: 50%;
+  width: 90%;
+}
+.shin-pics .char h3{
+  font-size: 8px;
+ 
+}
+.heading{
+  font-size: 1rem;
+}
+.carousel img{
+  width: 60%;
+  height: 80%;
+}
+.foot .footimg img{
+  width: 50px;
+  height: 50px;
+}
+.footpics {
+ margin: 20px 20px;
+}
+.footpics .fp img{
+  width: 70px;
+  height: 50px;
+}
+footer p{
+  font-size: 0.6rem;
+}
+
+.lo{
+  height: 40px;
+}
+.lo a{
+
+  font-size: 0.9rem;
+   
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+}
+

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Gochi+Hand&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+body{
+    background-image: url("bg-pics/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.loginbox{
+    width: 300px;
+    height: 380px;
+    background: lightgray;
+    color: white;
+    margin: 70px auto;
+    border-radius: 10px;
+}
+.logo{
+
+    width: 100px;
+    height:100px;
+    position: relative;
+    top: -70px;
+    left: calc(50% - 50px);
+
+}
+h1{
+    text-align: center;
+    margin-top: -60px;
+}
+
+label{
+    font-family: "Potta One", system-ui;
+     letter-spacing: 1px;
+    font-size: 18px;
+    display: block;
+    margin-left: 20px;
+}
+
+input{
+
+    width: 80%;
+    margin: 0 0 20px 20px;
+}
+button{
+    width: 80%;
+    margin: 0 0 20px 20px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+button {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 80%;
+    border-radius: 20px;
+    background: #fb2525;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.fpwd a{
+    text-decoration: none;
+    color: lightslategray;
+    margin-left: 30%;
+}
+.foot{
+    text-align: center;
+    
+}
+.foot a{
+    font-size: 20px;
+    font-family: "Potta One", system-ui;
+    font-weight: 500;
+    text-decoration: none;
+  border: 2px solid white;
+    border-radius: 50px;
+    background-color: blueviolet;
+    padding: 10px;
+    cursor: pointer;
+}
+.foot a:hover{
+    background-color: palevioletred;
+}
+button[type="submit"]:hover{
+    background: blueviolet;
+}
+@media (max-width: 350px){
+    .loginbox{
+        font-size: 1rem;
+    }
+    .foot a{
+        font-size: 0.7rem;
+    }
+}

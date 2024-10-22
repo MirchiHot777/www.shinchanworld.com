@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: gray;
+        }
+    .nav-bar{
+        background-color: gold;
+        padding: 10px;
+        color: orangered;
+        font-family: "Potta One", system-ui;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-bar h2{
+       
+        letter-spacing: 2px;
+    }
+    .nav-bar a{
+            color: gray;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .nav-bar a:hover{
+            color: orangered;
+        }
+        .video-container{
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-gap: 50px;
+           
+        }
+        .video-container video{
+            border: 2px solid yellow;
+        }
+        .video-container h3{
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: white;
+        }
+        .foot{
+            text-align: center;
+        }
+        .foot a{
+           text-decoration: none;
+           color: black;
+           font-size: 15px;
+           font-family: "Potta One", system-ui;
+           font-weight: 500;
+           border: 2px solid white;
+           border-radius: 50px;
+           padding: 10px;
+           background-color: yellow;
+           cursor: pointer;
+        }
+        .foot a:hover{
+            background-color: orangered;
+        }
+        .foot i{
+            font-size: 15px;
+            font-weight: 600;
+          
+           
+        }
+        @media (max-width: 350px){
+            .nav-bar{
+                font-size: 1rem;
+            }
+            h2{
+                font-size: 1rem;
+            }
+            .nav-bar a{
+                font-size: 1.5rem;
+            }
+            .nav-bar img{
+                width: 40px;
+                height: 40px;
+            }
+            .pop-text h2{
+                font-size: 20px;
+            }
+            .video-container{
+                width: 40%;
+               margin: 10px 0 20px 5px;
+            }
+            .foot a{
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="home.html"><i class='bx bxs-home'></i></a>
+        <h2>Shinchan Videos</h2>
+        <img src="footer pics/p4.png" alt="" width="70" height="70">
+    </div>
+    <section  class="videos" id="videos">
+            <div class="video-container">
+        <div>
+            <video width="300" height="150" controls>
+                <source src="videos/v1 (1).mp4" type="video/mp4">
+              </video>
+        </div>
+
+        <div>
+              <video width="300" height="150" controls>
+                <source src="videos/v1 (2).mp4" type="video/mp4">
+              </video>
+        </div>
+
+        <div>
+            <video width="300" height="150" controls>
+                <source src="videos/v1 (3).mp4" type="video/mp4">
+              </video>
+        </div>
+
+        <div>
+            <video width="300" height="150" controls>
+                <source src="videos/v1 (4).mp4" type="video/mp4">
+              </video>
+        </div>
+        
+        
+
+        </div>
+    </section>
+
+    <div class="foot">
+        <a href="photos.html">PHOTOS <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+</body>
+</html>

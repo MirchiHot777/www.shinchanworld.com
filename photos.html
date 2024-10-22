@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: gray;
+            
+        }
+        .nav-bar a{
+            color: gray;
+            font-size: 40px;
+            font-weight: 600;
+           
+        }
+        .nav-bar a:hover{
+            color: orangered;
+        }
+        .nav-bar{
+            background-color: gold;
+            color: orangered;
+            font-family: "Potta One", system-ui;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+        }
+        .nav-bar h2{
+           
+            letter-spacing: 2px;
+
+        }
+        .photo-gallery{
+            width: 80%;
+            margin: 100px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+            grid-gap: 30px;
+        }
+        .photo-gallery img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .photo-gallery img:hover{
+         transform: scale(0.8) rotate(-15deg);
+         border-radius: 20px;
+         box-shadow: 0 32px 75px rgb(68,77,136,0.2);
+        }
+        .full-img{
+            width: 100%;
+            height: 100hv;
+            background:rgba(0,0,0,0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        .full-img img{
+            width: 90%;
+            max-width: 500px;
+        }
+        .full-img span{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .foot{
+            text-align: center;
+        }
+        .foot a{
+           text-decoration: none;
+           color: black;
+           font-size: 15px;
+           font-family: "Potta One", system-ui;
+           font-weight: 500;
+           border: 2px solid white;
+           border-radius: 50px;
+           padding: 10px;
+           background-color: yellow;
+           cursor: pointer;
+        }
+        .foot a:hover{
+            background-color: orangered;
+        }
+        .foot i{
+            font-size: 15px;
+            font-weight: 600;
+          
+           
+        }
+        @media (max-width: 350px){
+            .nav-bar{
+                font-size: 0.5rem;
+            }
+            .nav-bar a{
+                font-size: 1.5rem;
+            }
+            .nav-bar img{
+                width: 30px;
+                height: 30px;
+            }
+            .photo-gallery{
+                font-size: 1rem;
+            }
+           .foot a{
+            font-size: 0.7rem;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="full-img" id="fullimgBox">
+        <img src="photos/p1.webp" alt="" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="nav-bar">
+        <a href="home.html"><i class='bx bxs-home'></i></a>
+        <h2>Shinchan Photos</h2>
+        <img src="footer pics/p1.png" alt="" width="60" height="60">
+        
+        </div>
+
+    <section id="photos">
+        <div class="photo-gallery">
+        <div>
+            <img src="photos/p1.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+        <div>
+            <img src="photos/p2.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+        <div>
+            <img src="photos/p3.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+        <div>
+            <img src="photos/p4.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+        <div>
+            <img src="photos/p5.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p6.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p7.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p9.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p10.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p11.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p12.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p13.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p14.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p15.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p16.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p17.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p18.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p9.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p20.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p21.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p22.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+
+        <div>
+            <img src="photos/p23.webp" alt="" onclick="openfullimg(this.src)">
+        </div>
+    </div>
+    </section>
+
+    <script>
+
+        var fullimgBox = document.getElementById("fullimgBox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openfullimg(pic){
+            fullimgBox.style.display= "flex";
+            fullimg.src= pic;
+        }
+
+        function closefullimg(){
+            fullimgBox.style.display= "none";
+        }
+    </script>
+
+    <div class="foot">
+<a href="videos.html">VIDEOS  
+    <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+</body>
+</html>
